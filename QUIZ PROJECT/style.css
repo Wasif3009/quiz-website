@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "New Amsterdam", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   box-sizing: border-box;
 }
 /* WEBSITE LAYOUT */
+
+html {
+  font-size: 62.5%;
+}
 body {
   background-color: white;
   overflow: hidden;
@@ -15,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 2rem 10%;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
@@ -30,15 +34,16 @@ body {
   filter: drop-shadow(0 0 5px #851111);
 }
 .navbar a {
-  font-size: 24px;
+  font-size: 2.4rem;
   text-decoration: none;
   color: white;
   font-weight: 500;
-  margin-left: 30px;
-  transition: 0.3s;
+  margin-left: 10rem;
+  transition: 0.4s;
 }
 .navbar a:hover {
   color: #851111;
+  border-bottom: 3px solid #851111;
 }
 .main {
   background: url(vecteezy_red-hexagon-on-a-black-background-technological-hexagonal_32521100.jpg)
@@ -61,13 +66,13 @@ body {
 }
 /* ended */
 .home-content {
-  max-width: 700px;
+  max-width: 70rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .home-content h1 {
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 700;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(180deg, white, #851111);
@@ -75,20 +80,22 @@ body {
   color: transparent;
 }
 .home-content p {
-  font-size: 24px;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+  line-height: 1.4;
 }
 .start-btn {
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
   background-color: #851111;
   border: none;
   color: white;
   border-radius: 1000px;
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -114,10 +121,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 50rem;
   background-color: white;
   border-radius: 5px;
-  padding: 10px 24px;
+  padding: 1rem 2.4rem;
   z-index: 3;
   opacity: 0;
   pointer-events: none;
@@ -125,37 +132,37 @@ body {
 }
 
 .popup-info h2 {
-  font-size: 50px;
+  font-size: 5rem;
   color: #851111;
 }
 .popup-info .info {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   color: #333;
-  margin: 5px 0;
+  margin: 0.5rem 0;
 }
 .popup-info .btn-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 3px solid gray;
-  margin-top: 20px;
-  padding: 20px 0 10px;
+  margin-top: 2rem;
+  padding: 2rem 0 1rem;
 }
 .popup-info .btn-group .info-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 50px;
+  width: 15rem;
+  height: 5rem;
   background-color: #851111;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 2.5rem;
   border: 2px solid black;
   outline: none;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   text-decoration: none;
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -212,13 +219,13 @@ body {
 }
 .quiz-section .quiz-box {
   position: relative;
-  width: 500px;
+  width: 50rem;
   background: transparent;
   border: 4px solid #851111;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 2rem 3rem;
   opacity: 0;
   pointer-events: none;
   transform: scale(0.9);
@@ -235,7 +242,7 @@ body {
 }
 
 .quiz-box h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   text-align: center;
   background: linear-gradient(45deg, transparent, #851111, transparent);
   border-radius: 6px;
@@ -244,21 +251,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 1.5rem 0;
   border-bottom: 3px solid #851111;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .quiz-header span {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 .quiz-header .header-score {
   background-color: #851111;
   border-radius: 5px;
-  padding: 7px 10px;
+  padding: 0.7rem 1rem;
 }
 .quiz-box .question-text {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 100;
 }
 .option-list .option {
@@ -266,9 +273,9 @@ body {
   padding: 3%;
   background: transparent;
   border: 1px solid white;
-  font-size: 18px;
+  font-size: 1.8rem;
   border-radius: 5px;
-  margin: 15px 0;
+  margin: 1.5rem 0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -299,28 +306,29 @@ body {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid #851111;
-  padding-top: 10px;
-  margin-top: 10px;
+  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .quiz-footer .question-total {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .quiz-footer .next-btn {
-  width: 100px;
-  height: 40px;
+  width: 10rem;
+  height: 4rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
   outline: none;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.3);
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
   pointer-events: none;
+  letter-spacing: 0.38rem;
 }
 
 .quiz-footer .next-btn.active {
@@ -340,11 +348,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  width: 500px;
+  width: 50rem;
   background: transparent;
   border: 2px solid #851111;
   border-radius: 6px;
-  padding: 20px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,21 +368,21 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 .result-box h2 {
-  font-size: 52px;
+  font-size: 5.2rem;
 }
 
 .result-box .percenatage-conatiner {
-  width: 300px;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0 40px;
+  margin: 2rem 0 4rem;
 }
 
 .percenatage-conatiner .circular-progress {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 25rem;
+  height: 25rem;
   background: conic-gradient(#851111 3.6deg, rgba(255, 255, 255, 0.1) 0deg);
   border-radius: 50%;
   display: flex;
@@ -385,22 +393,22 @@ body {
 .percenatage-conatiner .circular-progress::before {
   content: "";
   position: absolute;
-  width: 210px;
-  height: 210px;
+  width: 21rem;
+  height: 21rem;
   background: #09001d;
   border-radius: 50%;
 }
 
 .circular-progress .progress-value {
   position: relative;
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: 600;
 }
 
 .percenatage-conatiner .score-text {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .result-box .buttons {
@@ -408,16 +416,16 @@ body {
 }
 
 .buttons button {
-  width: 130px;
-  height: 50px;
+  width: 13rem;
+  height: 5rem;
   background-color: #851111;
   border: 2px solid #851111;
   outline: none;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 2rem;
   color: #fff;
   font-weight: 500;
-  margin: 0 20px 20px;
+  margin: 0 2rem 2rem;
   cursor: pointer;
   transition: 0.5s;
 }
